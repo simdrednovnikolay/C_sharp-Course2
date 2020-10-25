@@ -6,10 +6,10 @@ namespace Asteroid.Object
 {
     class BaseObject
     {
-       protected Point pos, dir;
-       protected Size size;
+        protected Point pos, dir;
+        protected Size size;
 
-
+        Image image = Image.FromFile("Picture\\rock.png");
         protected Point Pos
         {
             get => pos;
@@ -34,7 +34,7 @@ namespace Asteroid.Object
 
         public virtual void Draw()
         {
-            Game.Buffer.Graphics.DrawEllipse(Pens.Aqua, pos.X, pos.Y, size.Width, size.Height);
+            Game.Buffer.Graphics.DrawImage(image, new Point(Pos.X, Pos.Y));
         }
 
         public void Update()
@@ -52,9 +52,9 @@ namespace Asteroid.Object
         
         Image image = Image.FromFile("Picture\\star.png");
 
-        public Star(Point pos, Point dir, Size size, Image image):base(pos,dir,size)
+        public Star(Point pos, Point dir, Size size):base(pos,dir,size)
         {
-            this.image = image;
+            
         }
 
         public override void Draw()
