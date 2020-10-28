@@ -7,3 +7,4 @@ C:\C_sharp-Course2\C_sharp_course2_lessons\Asteroid\obj\Debug\Asteroid.exe
 C:\C_sharp-Course2\C_sharp_course2_lessons\Asteroid\obj\Debug\Asteroid.pdb
 C:\C_sharp-Course2\C_sharp_course2_lessons\Asteroid\bin\Debug\Picture\back.png
 C:\C_sharp-Course2\C_sharp_course2_lessons\Asteroid\bin\Debug\Picture\star.png
+C:\C_sharp-Course2\C_sharp_course2_lessons\Asteroid\bin\Debug\Picture\rock.png

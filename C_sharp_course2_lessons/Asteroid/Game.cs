@@ -57,27 +57,26 @@ namespace Asteroid
             Update();
         }
 
+        
         static public void Load()
         {
+            Random rnd = new Random();
+
             _objs = new BaseObject[30];
             for (int i = 0; i < _objs.Length / 2; i++)
-                _objs[i] = new BaseObject(new Point(600, i * 20), new Point(15 - i, 15 - i), new Size(20, 20));
+                _objs[i] = new BaseObject(new Point(rnd.Next(0,799),rnd.Next(10,500)), new Point(0, 0), new Size(30, 30));   
             for (int i = 15; i < _objs.Length; i++)
-                _objs[i] = new Star(new Point(600, i * 20), new Point(15 - i, 15 - i), new Size(20, 20), Image.FromFile("Picture\\star.png"));
+                _objs[i] = new Star(new Point(800, i+100), new Point(rnd.Next(0-i,0), 0), new Size(0, 0)); //new Point(800, i+100), new Point(0-i, 0), new Size(0, 0)
         }
 
         static public void Draw()
         {
-            // Проверяем вывод графики
-            //Buffer.Graphics.Clear(Color.Black);
             Buffer.Graphics.DrawImage(background, 0, 0);
-            //Buffer.Graphics.DrawRectangle(Pens.White, new Rectangle(100, 100, 200, 200));
-            //Buffer.Graphics.FillEllipse(Brushes.Wheat, new Rectangle(100, 100, 200, 200));
             foreach (BaseObject obj in _objs)
                 obj?.Draw();
             Buffer.Render();
         }
-        //XNA=MONOGAME
+        
         static public void Update()
         {
             foreach (BaseObject obj in _objs)
