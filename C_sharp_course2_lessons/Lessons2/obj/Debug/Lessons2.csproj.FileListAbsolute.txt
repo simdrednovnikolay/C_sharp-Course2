@@ -1,0 +1,7 @@
+C:\C_sharp-Course2\C_sharp_course2_lessons\Lessons2\bin\Debug\Lessons2.exe.config
+C:\C_sharp-Course2\C_sharp_course2_lessons\Lessons2\bin\Debug\Lessons2.exe
+C:\C_sharp-Course2\C_sharp_course2_lessons\Lessons2\bin\Debug\Lessons2.pdb
+C:\C_sharp-Course2\C_sharp_course2_lessons\Lessons2\obj\Debug\Lessons2.csprojAssemblyReference.cache
+C:\C_sharp-Course2\C_sharp_course2_lessons\Lessons2\obj\Debug\Lessons2.csproj.CoreCompileInputs.cache
+C:\C_sharp-Course2\C_sharp_course2_lessons\Lessons2\obj\Debug\Lessons2.exe
+C:\C_sharp-Course2\C_sharp_course2_lessons\Lessons2\obj\Debug\Lessons2.pdb
